@@ -1,0 +1,138 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    color: #ff0800;
+    padding: 2%;
+}
+
+/* code for the nav bar */
+
+.navbar-links {
+    display: inline;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;   
+    top: 0;             /* fix on top */
+    z-index: 1000;      /* that navbar is on top of other items */
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #ff0800;
+}
+
+.navbar-links a {
+    margin-left: 23px;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+
+/* text and elements styling */
+
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-size: 110px;
+    letter-spacing: -3px;
+    line-height: 0.9;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: -3px;
+    line-height: 0.9;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.text {
+    max-width: 75%;
+}
+
+
+.project-links {
+    border-top: 1px solid #ff0800; /* Rote Linie oben */
+    text-decoration: none;
+    margin-top: 100px;
+
+}
+
+
+
+
+/* Footer Styling */
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1); /* 10% weißer Hintergrund */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-image {
+    width: 50px; /* Größe des Bildes */
+    height: auto;
+    margin-right: 20px;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #ff0800;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+
+/* styling for the scrolling text animation */
+
+#scrolling-word-container {
+    width: 100%;
+    border-top: 1px solid #ff0800; /* Rote Linie oben */
+    border-bottom: 1px solid #ff0800; /* Rote Linie oben */
+
+
+}
+
+#scrolling-word {
+    display: inline-block;
+    font-weight: 200;
+    white-space: nowrap; /* Der Text bleibt in einer Zeile */
+}
