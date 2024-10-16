@@ -3,7 +3,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     color: #ff0800;
-    padding: 2%;
+    padding:10px;
 }
 
 /* code for the nav bar */
@@ -40,7 +40,7 @@ body {
 h1 {
     font-family: "Playfair Display";
     font-weight: 500;
-    font-size: 110px;
+    font-size: 130px;
     letter-spacing: -3px;
     line-height: 0.9;
 }
@@ -66,9 +66,9 @@ img {
 .project-links {
     border-top: 1px solid #ff0800; /* Rote Linie oben */
     text-decoration: none;
-    margin-top: 100px;
 
 }
+
 
 
 
@@ -125,8 +125,9 @@ footer a:hover {
 
 #scrolling-word-container {
     width: 100%;
-    border-top: 1px solid #ff0800; /* Rote Linie oben */
-    border-bottom: 1px solid #ff0800; /* Rote Linie oben */
+    border-top: 1px solid #ff0800; /* red line top */
+    border-top-width: 100%;
+    border-bottom: 1px solid #ff0800; /* red line bottom */
 
 
 }
