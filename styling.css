@@ -3,7 +3,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     color: #ff0800;
-    padding:10px;
+    margin: 0;
+    padding:0%;
+
 }
 
 /* code for the nav bar */
