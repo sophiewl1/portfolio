@@ -4,9 +4,22 @@ body {
     font-weight: 200;
     color: #ff0800;
     margin: 0;
-    padding:0%;
+    padding: 0%;
 
 }
+
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none; /* Anfangs unsichtbar */
+    z-index: 1000; /* Sicherstellen, dass es über anderen Inhalten liegt */
+}
+
 
 /* code for the nav bar */
 
@@ -17,23 +30,38 @@ body {
 #navbar {
     display: flex;
     justify-content: space-between;
-    position: sticky;   
-    top: 0;             /* fix on top */
-    z-index: 1000;      /* that navbar is on top of other items */
+    position: sticky;
+    top: 0;
+    /* fix on top */
+    z-index: 1000;
+    /* that navbar is on top of other items */
+    background-color: white;
+    /* Hintergrundfarbe geändert */
+    padding:20px 0px 20px 0px;
+
 }
+
+.header-image {
+    width: auto;
+    height: 45px;
+}
+
 
 #navbar a {
     text-decoration: none;
     color: #ff0800;
+
 }
 
 .navbar-links a {
-    margin-left: 23px;
+    margin-left: 50px;
+
+
 }
 
 #navbar a:hover {
-    color: black;
-}
+    color: #ff0800;
+    font-weight: bold;}
 
 
 /* text and elements styling */
@@ -42,9 +70,12 @@ body {
 h1 {
     font-family: "Playfair Display";
     font-weight: 500;
-    font-size: 130px;
+    font-size: 140px;
     letter-spacing: -3px;
     line-height: 0.9;
+    margin-top: 0;
+    margin-bottom: px;
+
 }
 
 h2 {
@@ -53,6 +84,7 @@ h2 {
     font-size: 50px;
     letter-spacing: -3px;
     line-height: 0.9;
+    margin-top: 0;
 }
 
 img {
@@ -65,11 +97,91 @@ img {
 }
 
 
-.project-links {
-    border-top: 1px solid #ff0800; /* Rote Linie oben */
+.project-links a {
     text-decoration: none;
+    color: #ff0800;
+    line-height: 2;
+}
+
+.project-links a:hover {
+    text-decoration: none;
+    color: #ff0800;
+    font-weight: bold;
+    line-height: 2;
 
 }
+
+.line-style {
+    width: 400px;           /* Breite der Linie */
+    border: 0.5px solid red;  /* Rote Farbe und Dicke der Linie */
+    margin-left: 0;         /* Kein Abstand zum linken Rand */
+
+}
+
+.line-style-long {
+    width: 100%;           /* Breite der Linie */
+    border: 0.5px solid red;  /* Rote Farbe und Dicke der Linie */
+    margin-left: 0;         /* Kein Abstand zum linken Rand */
+}
+
+.padded-content {
+    padding: 2%;
+}
+
+
+
+.headercontainer{
+    display: flex;             /* Flexbox-Layout aktivieren */
+    justify-content: space-between; /* Abstand zwischen den Containern */
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+.headerright {
+    position: relative; /* Ermöglicht das absolute Positionieren des GIFs innerhalb von headerright */
+    width: 50%;
+    height: auto;
+
+}
+
+.gif-position {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto; /* Größe anpassen, falls nötig */
+    height: 100%; /* Größe anpassen, falls nötig */
+}
+
+
+
+
+/* project container */
+
+
+
+.container {
+    display: flex;             /* Flexbox-Layout aktivieren */
+    justify-content: space-between; /* Abstand zwischen den Containern */
+    margin-top: 100px;
+
+}
+
+.left, .right {
+    flex: 1;                         /* Beide Container gleich groß machen */
+    display: flex; /* Flexbox-Layout aktivieren */
+    flex-direction: column;
+    justify-content: space-between;             
+}
+
+
+.right img {
+    max-width: 100%;           /* Bild passt sich dem Container an */
+    height: auto;              /* Proportionale Höhe */
+    width: 100%;
+}
+
+
 
 
 
@@ -78,8 +190,7 @@ img {
 /* Footer Styling */
 
 footer {
-    background-color: rgba(255, 255, 255, 0.1); /* 10% weißer Hintergrund */
-    padding: 20px;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,9 +214,9 @@ footer {
 }
 
 .footer-image {
-    width: 50px; /* Größe des Bildes */
-    height: auto;
-    margin-right: 20px;
+    width: auto;
+    /* Größe des Bildes */
+    height: 70px;
 }
 
 
@@ -118,8 +229,8 @@ footer a {
 }
 
 footer a:hover {
-    color: black;
-}
+    color: #ff0800;
+    font-weight: bold;}
 
 
 
@@ -127,9 +238,11 @@ footer a:hover {
 
 #scrolling-word-container {
     width: 100%;
-    border-top: 1px solid #ff0800; /* red line top */
+    border-top: 1px solid #ff0800;
+    /* red line top */
     border-top-width: 100%;
-    border-bottom: 1px solid #ff0800; /* red line bottom */
+    border-bottom: 1px solid #ff0800;
+    /* red line bottom */
 
 
 }
@@ -137,5 +250,6 @@ footer a:hover {
 #scrolling-word {
     display: inline-block;
     font-weight: 200;
-    white-space: nowrap; /* Der Text bleibt in einer Zeile */
+    white-space: nowrap;
+    /* Der Text bleibt in einer Zeile */
 }
