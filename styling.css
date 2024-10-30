@@ -108,8 +108,23 @@ img {
     color: #ff0800;
     font-weight: bold;
     line-height: 2;
-
 }
+
+
+.button {
+    text-decoration: none;
+    color: #ff0800;
+    line-height: 2;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #ff0800;
+    line-height: 2;
+    font-weight: bold;
+}
+
+
 
 .line-style {
     width: 400px;           /* Breite der Linie */
